@@ -17,19 +17,21 @@ body
 {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   text-align: center;
+  background-image: url('../Images/JapaneseStreet.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h1
 {
   color: white;
   font-family: "Lexend",sans-serif;
-  font-size: 11rem;
-  margin-top: 0;
-  position: absolute;
-  top: 23%;
-  left:33%;
+  /* font-size: 11rem; */
+  font-size:10vw;
+
 }
 
 h2
@@ -37,10 +39,10 @@ h2
   color: white;
   font-family: "Lexend",sans-serif;
   font-size: 2rem;
-  margin-top: 0;
+  /* margin-top: 0;
   position: absolute;
   top: 50%;
-  left:41%;
+  left:41%; */
 }
 
 hr
@@ -54,34 +56,27 @@ hr
   width: 480px;
 }
 
-.background
-{
-  height: 100%;
-  width: 100%;
-  transform: scale(1.2);
-}
-
-.background-image
-{
-  width:100%;
-}
-
 .btn
 {
   display: flex;
   align-items: center;
-  height: 125px;
+  height: 135px;
   justify-content: center;
   width: 200px;
-
+  margin: 5px 20px 0 0;
   transition: background-position 0.3s;
+}
+
+.button-row
+{
+  padding: 30px 0 25px 30px;
 }
 
 .b1
 {
-  position: absolute;
+  /* position: absolute;
   top: 60%;
-  right: 10%;
+  right: 10%; */
   background: linear-gradient(white 0%,white 50%, coral 50%,coral 100%);
   background-size: 100% 200%;
   background-position: 0 -100%;
@@ -94,9 +89,9 @@ hr
 
 .b2
 {
-  position: absolute;
+  /* position: absolute;
   top: 60%;
-  left: 10%;
+  left: 10%; */
   background: linear-gradient(white 0%,white 50%, coral 50%,coral 100%);
   background-size: 100% 200%;
   background-position: 0 -100%;
@@ -111,11 +106,22 @@ hr
 {
   background-color: coral;
   position: absolute;
-  top:23%;
-  left:30%;
+  top:21%;
+  left:25%;
+  right:25%;
   opacity: 0.85;
-  width: 600px;
-  height: 450px;
+  /* width: 40%;
+  height: 55%; */
+}
+
+.buffer
+{
+  height: 20px;
+}
+
+.row
+{
+  margin:0 24px;
 }
 
 .center-image
@@ -132,4 +138,13 @@ hr
 .l2
 {
   width: 70px;
+}
+
+@media (max-width:1025px)
+{
+  .center
+  {
+    top: 3%;
+    bottom:1%;
+  }
 }
